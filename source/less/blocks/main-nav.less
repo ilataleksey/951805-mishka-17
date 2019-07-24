@@ -1,77 +1,33 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
-  width: 100%;
 
   position: relative;
 
-  .block-font-style (17px, @line-height, bold, @font-color);
+  .block-font-style (17px, @line-height);
+  font-weight: bold;
+
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
-.main-nav__wrapper {
-  display: flex;
-  flex-direction: column;
+.main-nav__logo {
+  padding-top: 21px;
+  min-height: 80px;
+
+  text-align: center;
 }
 
-/*кнопка бургер-меню*/
 .main-nav__toggle {
-  position: absolute;
-  top: -42px;
-  right: 30px;
-
-  margin: 0;
-  padding: 0;
-
-  width: 20px;
-  height: 2px;
-
-  border: 0;
-  background-color: #221f1f;
-  cursor: pointer;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-
-    width: 20px;
-    height: 2px;
-
-    background-color: #221f1f;
-  }
-
-  &::before {
-    top: -4px;
-  }
-
-  &::after {
-    bottom: -4px;
-  }
+  top: 0;
+  right: 0;
 }
 
-/*задает бургер-меню вид крестика*/
-/*.main-nav__toggle {
-  width: 0;
-  &::before,
-  &::after {
-    content: "";
+.main-nav__add-info {
+  display: none;
 
-    position: absolute;
-    left: 0;
-
-    width: 28px;
-    height: 2px;
-
-    background-color: #221f1f;
-
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}*/
+  .block-font-style(15px, 24px);
+}
