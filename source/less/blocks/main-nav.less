@@ -2,15 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
+  width: 100%;
 
   position: relative;
-  width: 100%;
-  margin: auto;
 
-  font-size: 17px;
-  font-weight: bold;
+  .block-font-style (17px, @line-height, bold, @font-color);
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 /*кнопка бургер-меню*/
@@ -32,7 +35,6 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     left: 0;
 
@@ -49,10 +51,6 @@
   &::after {
     bottom: -4px;
   }
-}
-
-.main-nav__wrapper {
-  width: 100%;
 }
 
 /*задает бургер-меню вид крестика*/
