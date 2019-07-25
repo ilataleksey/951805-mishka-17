@@ -1,7 +1,7 @@
 .social__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   min-height: 80px;
@@ -9,4 +9,12 @@
   .list-style-reset();
 
   border-bottom: 1px solid #e5e5e5;
+}
+
+.social__item {
+  padding-right: 40px;
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
