@@ -5,9 +5,32 @@
 .user-list__login,
 .user-list__basket {
   display: block;
-  padding: 21px 10px 29px 76px;
+  padding: 22px 10px 29px 76px;
 
   color: #000000;
 
   border-top: 1px solid #ececec;
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    order: 1;
+
+    width: 75%;
+  }
+
+  .user-list__login,
+  .user-list__basket {
+    padding: 34px 0 35px 85px;
+
+    border-top: none;
+    border-left: 1px solid #ececec;
+  }
+
+  .user-list__login {
+    font-size: 0;
+  }
 }

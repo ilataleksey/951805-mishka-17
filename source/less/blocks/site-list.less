@@ -4,9 +4,25 @@
 
 .site-list__link {
   display: block;
-  padding: 21px 10px 29px 76px;
+  padding: 22px 10px 29px 76px;
 
   color: #000000;
 
   border-top: 1px solid #ececec;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+
+    width: 60%;
+  }
+
+  .site-list__link {
+    padding: 22px 36px 0 0;
+
+    border-top: none;
+  }
 }
