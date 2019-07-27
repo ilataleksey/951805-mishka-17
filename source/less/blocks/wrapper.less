@@ -8,3 +8,23 @@
   padding: 0;
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    padding: 0 50px;
+  }
+
+  .wrapper--full-screen {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper,
+  .wrapper--full-screen {
+    margin: 0 auto;
+
+    max-width: @max-screen;
+  }
+}
