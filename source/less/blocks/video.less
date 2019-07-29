@@ -2,16 +2,20 @@
   margin-bottom: 58px;
 }
 
-.video__container {
-  margin-left: auto;
-  margin-right: auto;
+.video__wrapper {
+  padding: 0 30px;
+}
 
-  width: 260px;
+.video__container {
+  display: flex;
+  flex-direction: column;
 
   border: 1px solid #ececec;
 }
 
 .video__name {
+  align-self: center;
+
   position: relative;
   margin: 27px 33px 25px 33px;
   padding-left: 57px;
@@ -23,15 +27,19 @@
   &::before {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 5px;
     left: 0;
 
     width: 32px;
-    height: 28px;
+    height: 32px;
 
     background-image: url("../img/svg/icon-video.svg");
     background-repeat: no-repeat;
   }
+}
+
+.video__content {
+  align-self: center;
 }
 
 .video__text {
