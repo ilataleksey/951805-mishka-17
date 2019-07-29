@@ -1,31 +1,16 @@
 .wrapper {
   margin: 0 auto;
-  padding: 0 30px;
   min-width: 320px;
-}
-
-.wrapper--full-screen {
-  padding: 0;
-  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .wrapper {
-    padding: 0 50px;
-  }
-
-  .wrapper--full-screen {
-    padding: 0;
-    margin: 0 auto;
+    width: 668px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .wrapper,
-  .wrapper--full-screen {
-    margin: 0 auto;
-    padding: 0;
-
-    max-width: @max-screen;
+  .wrapper {
+    width: 1050px;
   }
 }
