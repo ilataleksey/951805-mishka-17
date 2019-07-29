@@ -1,13 +1,45 @@
+.video {
+  margin-bottom: 58px;
+}
+
+.video__container {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 260px;
+
+  border: 1px solid #ececec;
+}
+
 .video__name {
-  margin: 0;
+  position: relative;
+  margin: 27px 33px 25px 33px;
+  padding-left: 57px;
 
   .block-font-style(17px, 24px);
   font-weight: bold;
   color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+
+    width: 32px;
+    height: 28px;
+
+    background-image: url("../img/svg/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .video__text {
-  margin: 0;
+  margin: 33px 33px 28px 33px;
 
   .block-font-style(13px, 24px);
+}
+
+.video__order {
+  margin: 0 33px 33px 33px;
 }
