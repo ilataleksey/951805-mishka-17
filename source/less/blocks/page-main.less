@@ -14,7 +14,7 @@
   .page-main__title {
     position: relative;
 
-    padding: 100px 50px 76px 50px;
+    padding: 100px 50px 88px 50px;
 
     .block-font-style(43px, 50px);
 
@@ -28,6 +28,18 @@
 
       background-image: url("../img/svg/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__title {
+    padding: 97px 50px 113px 50px;
+
+    .block-font-style(53px, 57px);
+
+    &::before {
+      height: 34px;
     }
   }
 }
