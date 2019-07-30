@@ -32,26 +32,6 @@
   margin-bottom: 29px;
   padding-top: 49px;
 
-  &--eco {
-    padding-right: 84px;
-  }
-
-  &--style {
-    padding-right: 57px;
-  }
-
-  &--like {
-    padding-right: 77px;
-  }
-
-  &--handmade {
-    padding-right: 45px;
-  }
-
-  &--package {
-    padding-right: 60px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -63,28 +43,48 @@
     background-repeat: no-repeat;
   }
 
-  &--eco::before {
-    background-image: url("../img/svg/icon-feature-flower.svg");
+  &--eco {
+    padding-right: 84px;
+
+    ::before {
+      background-image: url("../img/svg/icon-feature-flower.svg");
+    }
   }
 
-  &--style::before {
-    background-image: url("../img/svg/icon-feature-money.svg");
+  &--style {
+    padding-right: 57px;
+
+    &::before {
+      background-image: url("../img/svg/icon-feature-money.svg");
+    }
   }
 
-  &--like::before {
-    background-image: url("../img/svg/icon-feature-heart.svg");
+  &--like {
+    padding-right: 77px;
+
+    &::before {
+      background-image: url("../img/svg/icon-feature-heart.svg");
+    }
   }
 
-  &--handmade::before {
-    background-image: url("../img/svg/icon-feature-ball.svg");
+  &--handmade {
+    padding-right: 45px;
+
+    &::before {
+      background-image: url("../img/svg/icon-feature-ball.svg");
+    }
   }
 
   &--producer::before {
     background-image: url("../img/svg/icon-feature-rocket.svg");
   }
 
-  &--package::before {
-    background-image: url("../img/svg/icon-feature-gift.svg");
+  &--package {
+    padding-right: 60px;
+
+    &::before {
+      background-image: url("../img/svg/icon-feature-gift.svg");
+    }
   }
 }
 
