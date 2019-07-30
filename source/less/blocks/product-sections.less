@@ -1,0 +1,143 @@
+.product-sections {
+  margin-bottom: 30px;
+  background-color: #fafafa;
+}
+
+.product-sections__header {
+  padding: 72px 38px 119px 38px;
+  min-height: 282px;
+
+  text-align: center;
+
+  background-image: url("../img/jpg/hero-mobile%401x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+.product-sections__title {
+  margin: 0;
+
+  .block-font-style(27px, 30px);
+  font-weight: bold;
+  color: #010000;
+}
+
+.product-sections__list {
+  .list-style-reset();
+}
+
+.product-sections__item:first-child {
+  background-color: #63d1bb;
+}
+
+.product-sections__item:nth-child(2) {
+  background-color: #56c3b2;
+}
+
+.product-sections__link {
+  position: relative;
+  display: block;
+  padding: 28px 50% 28px 30px;
+
+  min-height: 104px;
+
+  .block-font-style(19px, 24px);
+  font-weight: bold;
+  color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 30px;
+
+    width: 40px;
+    height: 62px;
+
+    background-image: url("../img/svg/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.5;
+  }
+}
+
+.product-sections__link--toy {
+  padding-right: 57.8%;
+
+  &::after {
+    top: 21px;
+    right: 27px;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/svg/icon-toy.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product-sections {
+    position: relative;
+    margin-bottom: 49px;
+
+    border-top: 1px solid #ececec;
+    background-color: #f9f9f9;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 26px;
+
+      background-image: url("../img/svg/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
+  .product-sections__header {
+    padding: 158px 134px 119px 134px;
+    min-height: 626px;
+
+    text-align: center;
+  }
+
+  .product-sections__title {
+    .block-font-style(43px, 50px);
+  }
+
+  .product-sections__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .product-sections__item {
+    width: 50%;
+    min-height: 119px;
+  }
+
+  .product-sections__link {
+    padding: 28px 50% 28px 35px;
+
+    .block-font-style(19px, 24px);
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .product-sections__link--toy {
+    padding-right: 57.63%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-sections {
+    margin-bottom: 132px;
+  }
+
+  .product-sections__title {
+    .block-font-style(53px, 57px);
+  }
+}

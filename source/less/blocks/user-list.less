@@ -1,0 +1,95 @@
+.user-list {
+  .list-style-reset();
+}
+
+.user-list__login,
+.user-list__basket {
+  display: block;
+  padding: 22px 10px 29px 30px;
+
+  color: #000000;
+
+  border-top: 1px solid #ececec;
+}
+
+.user-list__login path,
+.user-list__basket path {
+  fill: #d5d5d5;
+}
+
+.user-list__login svg,
+.user-list__basket svg {
+  vertical-align: text-bottom;
+  margin-right: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    order: 1;
+
+    width: 52.1%;
+  }
+
+  .user-list__item {
+    width: 66.95%;
+  }
+
+  .user-list__item:first-child {
+    width: 23.85%;
+  }
+
+  .user-list__login,
+  .user-list__basket {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    padding: 33px 0;
+
+    border-top: none;
+  }
+
+  .user-list__login {
+    justify-content: center;
+    align-items: flex-end;
+
+    font-size: 0;
+
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+  }
+
+  .user-list__login svg,
+  .user-list__basket svg {
+    margin: 0;
+  }
+
+  .user-list__login svg {
+    text-align: center;
+  }
+
+  .user-list__basket svg {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    order: 3;
+
+    width: 38.7%;
+  }
+
+  .user-list__item {
+    width: 57.74%;
+  }
+
+  .user-list__item:first-child {
+    margin-left: 14%;
+
+    width: 20.64%;
+  }
+}

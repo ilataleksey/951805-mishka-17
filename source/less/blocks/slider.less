@@ -1,0 +1,40 @@
+.slider__buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 38px;
+}
+
+.slider__button {
+  position: relative;
+  padding: 0;
+
+  width: 50%;
+  height: 50px;
+
+  border: 1px solid #ececec;
+  background-color: unset;
+
+  &::before {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    top: 12px;
+    left: 0;
+    right: 0;
+
+    width: 50px;
+    height: 26px;
+
+    background-image: url("../img/svg/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--next {
+    border-left: 0;
+  }
+
+  &--next::before {
+    transform: rotate(180deg);
+  }
+}

@@ -1,7 +1,11 @@
-.main-font () {
-  font-family: "Open Sans", "Tahoma", sans-serif;
+.block-font-style(@font-size, @line-height) {
   font-size: @font-size;
   line-height: @line-height;
-  font-weight: @font-weight;
-  color: @font-color;
+}
+
+.list-style-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }

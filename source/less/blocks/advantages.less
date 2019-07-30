@@ -1,0 +1,160 @@
+.advantages {
+  margin-bottom: 59px;
+}
+
+.advantages__wrapper {
+  padding: 0 30px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 28px;
+
+  .block-font-style(25px, 30px);
+  font-weight: bold;
+  color: #000000;
+}
+
+.advantages__list {
+  .list-style-reset();
+
+  .block-font-style(17px, 20px);
+  font-weight: bold;
+  color: #000000;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  margin-bottom: 29px;
+  padding-top: 49px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 49px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--eco {
+    padding-right: 84px;
+
+    ::before {
+      background-image: url("../img/svg/icon-feature-flower.svg");
+    }
+  }
+
+  &--style {
+    padding-right: 57px;
+
+    &::before {
+      background-image: url("../img/svg/icon-feature-money.svg");
+    }
+  }
+
+  &--like {
+    padding-right: 77px;
+
+    &::before {
+      background-image: url("../img/svg/icon-feature-heart.svg");
+    }
+  }
+
+  &--handmade {
+    padding-right: 45px;
+
+    &::before {
+      background-image: url("../img/svg/icon-feature-ball.svg");
+    }
+  }
+
+  &--producer::before {
+    background-image: url("../img/svg/icon-feature-rocket.svg");
+  }
+
+  &--package {
+    padding-right: 60px;
+
+    &::before {
+      background-image: url("../img/svg/icon-feature-gift.svg");
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    margin-bottom: 104px;
+  }
+
+  .advantages__wrapper {
+    padding: 0;
+  }
+
+  .advantages__title {
+    margin-bottom: 46px;
+
+    .block-font-style(43px, 50px);
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .block-font-style(20px, 22px);
+  }
+
+  .advantages__item {
+    position: relative;
+
+    margin-bottom: 56px;
+
+    width: 50%;
+
+    &--eco {
+      padding-right: 105px;
+    }
+
+    &--style {
+      order: 1;
+      padding-right: 70px;
+    }
+
+    &--like {
+      order: 3;
+      padding-right: 95px;
+    }
+
+    &--producer {
+      order: 2;
+    }
+
+    &--package {
+      order: 4;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    margin-bottom: 166px;
+  }
+
+  .advantages__wrapper {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+
+  .advantages__title {
+    margin-bottom: 40px;
+
+    .block-font-style(53px, 57px);
+  }
+}
