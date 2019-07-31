@@ -111,7 +111,7 @@
                       <td class="bestsellers-item__value">15 см</td>
                     </tr>
                   </table>
-                  <picture class="bestsellers-item__picture">
+                  <picture>
                     <source media="(min-width: 1150px)" srcset="img/jpg/triple-set-desktop%401x.jpg" type="image/jpeg">
                     <source media="(min-width: 768px)" srcset="img/jpg/triple-set-tablet%401x.jpg" type="image/jpeg">
                     <img class="bestsellers-item__img" src="img/jpg/triple-set-mobile%401x.jpg" width="260" height="315" alt="Вязаные корзинки">
@@ -179,7 +179,11 @@
                 </td>
               </tr>
             </table>
-            <img class="contacts__map" src="img/jpg/map-mobile%401x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+            <picture class="contacts__map-container">
+              <source media="(min-width: 1150px)" srcset="img/jpg/map-desktop@1x.jpg" type="image/jpeg">
+              <source media="(min-width: 768px)" srcset="img/jpg/map-tablet@1x.jpg" type="image/jpeg">
+              <img class="contacts__map" src="img/jpg/map-mobile%401x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+            </picture>
             <a class="contacts__contact-us button" href="#">Напишите нам</a>
           </div>
         </div>
