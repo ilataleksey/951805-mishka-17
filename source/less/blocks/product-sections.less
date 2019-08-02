@@ -1,10 +1,10 @@
 .product-sections {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   background-color: #fafafa;
 }
 
 .product-sections__header {
-  padding: 72px 38px 119px 38px;
+  padding: 70px 38px 119px 37px;
   min-height: 282px;
 
   text-align: center;
@@ -37,9 +37,7 @@
 .product-sections__link {
   position: relative;
   display: block;
-  padding: 28px 50% 28px 30px;
-
-  min-height: 104px;
+  padding: 25px 50% 29px 29px;
 
   .block-font-style(19px, 24px);
   font-weight: bold;
@@ -49,7 +47,7 @@
     content: "";
     position: absolute;
     top: 23px;
-    right: 30px;
+    right: 36px;
 
     width: 40px;
     height: 62px;
@@ -86,7 +84,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       left: 0;
 
       width: 100%;
@@ -102,6 +100,9 @@
     min-height: 626px;
 
     text-align: center;
+
+    background-image: url("../img/jpg/hero-tablet%401x.jpg");
+    background-position: 50% 0;
   }
 
   .product-sections__title {
@@ -135,6 +136,11 @@
 @media (min-width: @desktop-width) {
   .product-sections {
     margin-bottom: 132px;
+  }
+
+  .product-sections__header {
+    background-image: url("../img/jpg/hero-desktop%401x.jpg");
+    background-position: 50% 0;
   }
 
   .product-sections__title {
