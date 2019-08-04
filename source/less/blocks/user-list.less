@@ -10,6 +10,24 @@
   color: #000000;
 
   border-top: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #63d1bb;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 .user-list__login path,

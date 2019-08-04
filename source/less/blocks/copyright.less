@@ -6,17 +6,31 @@
   padding: 22px 0 18px 0;
 }
 
-.copyright path {
+.copyright__link path {
   fill: #63d1bb;
 }
 
+.copyright__link {
+  &[href]:hover path,
+  &[href]:focus path {
+    fill: #46c1ae;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
 .copyright__text {
+  display: inline-block;
+
   margin: 0;
   padding-top: 5px;
   padding-right: 30px;
 
   .block-font-style(19px, 18px);
   font-weight: bold;
+  vertical-align: top;
   color: #000000;
 }
 
