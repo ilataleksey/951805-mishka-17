@@ -2,7 +2,7 @@
   .list-style-reset();
 }
 
-.user-list__login,
+.user-list__search,
 .user-list__basket {
   display: block;
   padding: 25px 10px 29px 31px;
@@ -20,28 +20,25 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: #63d1bb;
   }
 
-  &:active path {
+  &:active svg {
     opacity: 0.3;
   }
 }
 
-.user-list__login path,
-.user-list__basket path {
-  fill: #d5d5d5;
-}
-
-.user-list__login svg,
+.user-list__search svg,
 .user-list__basket svg {
   vertical-align: text-bottom;
   margin-right: 20px;
+
+  fill: #d5d5d5;
 }
 
-.user-list__login svg {
+.user-list__search svg {
   margin-right: 22px;
 }
 
@@ -63,7 +60,7 @@
     width: 23.85%;
   }
 
-  .user-list__login,
+  .user-list__search,
   .user-list__basket {
     display: flex;
     justify-content: flex-end;
@@ -74,7 +71,7 @@
     border-top: none;
   }
 
-  .user-list__login {
+  .user-list__search {
     justify-content: center;
     align-items: flex-end;
 
@@ -84,12 +81,12 @@
     border-left: 1px solid #ececec;
   }
 
-  .user-list__login svg,
+  .user-list__search svg,
   .user-list__basket svg {
     margin: 0;
   }
 
-  .user-list__login svg {
+  .user-list__search svg {
     text-align: center;
   }
 
