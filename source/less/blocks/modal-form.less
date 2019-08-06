@@ -23,13 +23,23 @@
 
   .block-font-style(17px, 16px);
   text-align: center;
-  vertical-align: top;
 
-  border: 2px solid #ececec;
+  border: 2px solid rgba(68, 68, 68, 0.1);
 
-  .modal-form__input:checked ~ & {
-    border: 2px solid #63d1bb;
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
   }
+}
+
+.modal-form__input:focus ~ .modal-form__label {
+  outline-color: #4d90fe;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.modal-form__input:checked ~ .modal-form__label {
+  border: 2px solid #63d1bb;
 }
 
 .modal-form__button {
@@ -39,4 +49,9 @@
 
   border: 2px solid #63d1bb;
   background-color: #63d1bb;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #444444;
+  }
 }

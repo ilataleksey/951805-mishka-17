@@ -22,6 +22,17 @@
   }
 }
 
+.social__link {
+  &[href]:hover path,
+  &[href]:focus path {
+    fill: #46c1ae;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .social {
     margin: auto;

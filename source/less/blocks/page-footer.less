@@ -1,9 +1,20 @@
 .page-footer {
+  margin-top: auto;
+
   background-color: #f1f1f1;
 }
 
 .page-footer__logo {
   display: none;
+
+  &[href]:hover path,
+  &[href]:focus path {
+    fill: #46c1ae;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
