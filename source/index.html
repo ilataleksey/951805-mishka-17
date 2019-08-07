@@ -12,7 +12,7 @@
     <header class="page-header">
       <div class="wrapper">
         <div class="page-header__wrapper">
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
             <a class="main-nav__logo">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg" type="image/svg+xml">
@@ -20,26 +20,26 @@
                 <img class="main-nav__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35" alt="MISHKA">
               </picture>
             </a>
-            <button class="main-nav__toggle burger" type="button" aria-label="Открыть меню">
-              <span class="burger__element"></span>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+              <span class="main-nav__toggle-element"></span>
             </button>
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="form.html">Вязание на заказ</a>
-                </li>
-              </ul>
-              <ul class="main-nav__list site-list site-list--desktop-only">
-                <li class="site-list__item site-list__item--desktop-only">
-                  <a class="site-list__link" href="#">Новые поступления</a>
-                </li>
-                <li class="site-list__item site-list__item--desktop-only">
-                  <a class="site-list__link" href="#">Распродажа</a>
-                </li>
-              </ul>
-            <ul class="main-nav__list user-list">
+            <ul class="main-nav__list main-nav__list--mobile site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list site-list site-list--desktop-only">
+              <li class="site-list__item site-list__item--desktop-only">
+                <a class="site-list__link" href="#">Новые поступления</a>
+              </li>
+              <li class="site-list__item site-list__item--desktop-only">
+                <a class="site-list__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list main-nav__list--mobile user-list">
               <li class="user-list__item">
                 <a class="user-list__search" href="#">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
@@ -117,7 +117,7 @@
                     <img class="bestsellers-item__img" src="img/jpg/triple-set-mobile@1x.jpg" srcset="img/jpg/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
                   </picture>
                   <p class="bestsellers-item__price">Цена: 990 руб.</p>
-                  <a class="bestsellers-item__order button" href="#">Заказать</a>
+                  <a class="bestsellers-item__order button modal__open--js" href="#">Заказать</a>
                 </div>
               </li>
             </ul>
@@ -278,5 +278,9 @@
       </form>
     </section>
 
+    <div class="overlay"></div>
+
+    <script src="js/main-nav.js"></script>
+    <script src="js/bestsellers.js"></script>
   </body>
 </html>
