@@ -26,6 +26,8 @@
 
   border: 2px solid rgba(68, 68, 68, 0.1);
 
+  cursor: pointer;
+
   &:hover {
     border: 2px solid rgba(68, 68, 68, 0.3);
   }
@@ -43,7 +45,7 @@
 }
 
 .modal-form__button {
-  margin-top: 31px;
+  margin-top: 32px;
 
   color: #ffffff;
 
@@ -53,5 +55,11 @@
   &:hover,
   &:focus {
     border: 2px solid #444444;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal-form__label {
+    width: 110px;
   }
 }

@@ -6,19 +6,21 @@
   padding: 22px 0 18px 0;
 }
 
-.copyright__link path {
-  fill: #63d1bb;
-}
-
 .copyright__link {
-  &[href]:hover path,
-  &[href]:focus path {
-    fill: #46c1ae;
+  color: #63d1bb;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: #46c1ae;
   }
 
   &[href]:active {
     opacity: 0.3;
   }
+}
+
+.copyright__link svg {
+  fill: currentColor;
 }
 
 .copyright__text {
