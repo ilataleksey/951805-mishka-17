@@ -8,12 +8,10 @@ navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function(evt) {
   evt.preventDefault();
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
+  if (navMain.classList.contains('main-nav--opened')) {
     navMain.classList.remove('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--opened');
   }
 });
 
