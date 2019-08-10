@@ -7,14 +7,20 @@
 .page-footer__logo {
   display: none;
 
-  &[href]:hover svg,
-  &[href]:focus svg {
-    fill: #46c1ae;
+  color: #231f20;
+
+  &[href]:hover,
+  [href]:focus {
+    color: #46c1ae;
   }
 
   &[href]:active {
     opacity: 0.3;
   }
+}
+
+.page-footer__logo svg {
+  fill: currentColor;
 }
 
 @media (min-width: @tablet-width) {
