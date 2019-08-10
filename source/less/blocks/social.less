@@ -23,13 +23,15 @@
 }
 
 .social__link svg {
-  fill: #231f20;
+  fill: currentColor;
 }
 
 .social__link {
-  &[href]:hover svg,
-  &[href]:focus svg {
-    fill: #46c1ae;
+  color: #231f20;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: #46c1ae;
   }
 
   &[href]:active {
