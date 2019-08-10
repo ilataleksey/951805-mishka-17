@@ -5,10 +5,11 @@
   z-index: 10;
 
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   margin: 0 auto;
-  padding: 34px 30px 46px 30px;
+  padding: 34px 29px 45px 29px;
 
   width: 320px;
 
@@ -36,7 +37,7 @@
 }
 
 .modal__form {
-  margin-top: 28px;
+  margin-top: 26px;
 }
 
 .modal--opened {
@@ -50,43 +51,44 @@
 
 @keyframes bounce {
   0% {
-    transform: translateY(-200%);
+    transform: translate(-50%, -200%);
   }
 
   70% {
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
   }
 
   90% {
-    transform: translateY(-60%);
+    transform: translate(-50%, -60%);
   }
 
   100% {
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
   }
 }
 
 @media (min-width: @tablet-width) {
   .modal {
+    padding: 33px 105px 45px 105px;
+
+    width: 566px;
+
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  @keyframes bounce {
-    0% {
-      transform: translate(-50%, -200%);
-    }
+  .modal__title {
+    margin-bottom: 12px;
+    padding: 0;
 
-    70% {
-      transform: translate(-50%, -50%);
-    }
+    .block-font-style(30px, 57px);
+  }
 
-    90% {
-      transform: translate(-50%, -60%);
-    }
+  .modal__text {
+    .block-font-style(17px, 30px);
+  }
 
-    100% {
-      transform: translate(-50%, -50%);
-    }
+  .modal__form {
+    margin-top: 20px;
   }
 }
