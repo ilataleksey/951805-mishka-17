@@ -81,7 +81,7 @@
 @media (min-width: @tablet-width) {
   .product-sections {
     position: relative;
-    margin-bottom: 49px;
+    margin-bottom: 35px;
 
     border-top: 1px solid #ececec;
     background-color: #f9f9f9;
@@ -89,7 +89,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -1px;
+      bottom: -3px;
       left: 0;
 
       width: 100%;
@@ -97,11 +97,12 @@
 
       background-image: url("../img/svg/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
+      background-size: contain;
     }
   }
 
   .product-sections__header {
-    padding: 158px 134px 119px 134px;
+    padding: 153px 50px 119px 50px;
     min-height: 626px;
 
     text-align: center;
@@ -134,11 +135,16 @@
   }
 
   .product-sections__link {
-    padding: 28px 50% 54px 35px;
+    padding: 33px 50% 50px 35px;
 
     .block-font-style(19px, 24px);
     font-weight: bold;
     color: #ffffff;
+
+    &::after {
+      top: 30px;
+      right: 37px;
+    }
 
     &:hover,
     &:focus {
@@ -158,6 +164,11 @@
 
   .product-sections__link--toy {
     padding-right: 57.63%;
+
+    &::after {
+      top: 33px;
+      right: 33px;
+    }
   }
 }
 
