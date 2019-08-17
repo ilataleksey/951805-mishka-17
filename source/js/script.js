@@ -1,6 +1,6 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var modalOpen = document.querySelectorAll(".modal__open--js");
+var modalOpen = document.querySelectorAll(".js-modal__open");
 var modal = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
 
