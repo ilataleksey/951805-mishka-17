@@ -153,17 +153,38 @@
 
 @media (min-width: @desktop-width) {
   .advantages {
-    margin-bottom: 166px;
+    margin-bottom: 33px;
   }
 
   .advantages__wrapper {
-    padding-right: 175px;
-    padding-left: 175px;
+    padding: 0 170px;
   }
 
   .advantages__title {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 
     .block-font-style(53px, 57px);
+  }
+
+  .advantages__list {
+    padding-left: 5px;
+  }
+
+  .advantages__item {
+    &--eco {
+      padding-right: 125px;
+    }
+
+    &--style {
+      padding-right: 90px;
+    }
+
+    &--like {
+      padding-right: 115px;
+    }
+
+    &--handmade {
+      padding-right: 55px;
+    }
   }
 }
