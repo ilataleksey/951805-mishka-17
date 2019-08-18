@@ -32,12 +32,12 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 
-  padding-top: 28px;
+  padding-top: 27px;
 }
 
 .catalog-item__name {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
 
   .block-font-style(17px, 24px);
   font-weight: bold;
@@ -64,7 +64,7 @@
 
 .catalog-item__info {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 
   .block-font-style(13px, 30px);
 }
@@ -74,8 +74,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  padding-top: 27px;
-  padding-bottom: 28px;
+  padding-top: 21px;
+  padding-bottom: 26px;
 
   border-top: 1px solid #ececec;
 }
@@ -89,6 +89,7 @@
 }
 
 .catalog-item__cart {
+  color: #818181;
   opacity: 0.2;
 
   &:hover {
@@ -101,7 +102,7 @@
   }
 }
 
-.catalog-item__cart svg {
+.catalog-item__icon-cart {
   fill: currentColor;
 }
 
@@ -110,23 +111,40 @@
     flex-direction: row;
   }
 
-  .catalog-item__image {
-    width: 334px;
-    height: 334px;
+  .catalog-item__name-container {
+    padding-top: 25px;
+  }
+
+  .catalog-item__name {
+    margin-bottom: 6px;
+    padding-right: 40px;
+
+    .block-font-style(20px, 24px);
+  }
+
+  .catalog-item__info {
+    margin-bottom: 0;
+
+    .block-font-style(15px, 30px);
+  }
+
+  .catalog-item__price-container {
+    padding: 21px 6px 26px 6px;
+  }
+
+  .catalog-item__price {
+    .block-font-style(17px, 24px);
   }
 
   .catalog-item__link {
     align-self: flex-start;
+    flex-shrink: 0;
   }
 
   .catalog-item__wrapper {
-    padding: 0 33px;
-
     flex-grow: 1;
-  }
 
-  .catalog-item__name {
-    margin-bottom: 12px;
+    padding: 0 25px;
   }
 }
 
@@ -137,15 +155,30 @@
   }
 
   .catalog-item__wrapper {
+    padding: 0 35px 0 25px;
+
     width: 315px;
     height: 100%;
   }
 
+  .catalog-item__name-container {
+    padding-top: 24px;
+  }
+
   .catalog-item__name {
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     padding-right: 15px;
 
     .block-font-style(20px, 24px);
+  }
+
+  .catalog-item__info {
+    margin-bottom: 15px;
+    .block-font-style(15px, 30px);
+  }
+
+  .catalog-item__price {
+    .block-font-style(17px, 24px);
   }
 }

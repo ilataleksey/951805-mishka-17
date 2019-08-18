@@ -26,7 +26,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/*.js",
+    "source/js/polifill/*.js",
     "source/*.ico"
   ], {
     base: "source"
@@ -84,7 +84,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/script.js")
     .pipe(jsmin())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
