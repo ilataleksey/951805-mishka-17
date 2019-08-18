@@ -89,7 +89,7 @@
   }
 
   .bestsellers-item__name {
-    margin-bottom: 53px;
+    margin-bottom: 48px;
 
     width: 75%;
 
@@ -97,8 +97,8 @@
   }
 
   .bestsellers-item__category {
-    margin-right: 27px;
-    margin-bottom: 53px;
+    margin-right: 30px;
+    margin-bottom: 48px;
 
     width: 10%;
 
@@ -107,23 +107,9 @@
     text-transform: uppercase;
   }
 
-  .bestsellers-item__container-bottom {
-    position: relative;
-
-    padding-right: 378px;
-  }
-
-  .bestsellers-item__img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    width: 333px;
-    height: 404px;
-  }
-
   .bestsellers-item__description {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
+    padding-right: 0;
 
     min-height: 90px;
 
@@ -134,27 +120,61 @@
     margin-bottom: 25px;
   }
 
+  .bestsellers-item__argument,
+  .bestsellers-item__value {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-right: 0;
+  }
+
   .bestsellers-item__price {
-    padding: 33px 0;
+    padding: 34px 0;
+
     .block-font-style(20px, 24px);
   }
 }
 
+@media (max-width: @desktop-width - 1) {
+  .bestsellers-item__container-bottom {
+    position: relative;
+
+    padding-right: 378px;
+  }
+
+  .bestsellers-item__img {
+    position: absolute;
+    top: 7px;
+    right: 0;
+
+    width: 333px;
+    height: 404px;
+  }
+}
+
 @media (min-width: @desktop-width) {
+  .bestsellers {
+    padding-bottom: 96px;
+    margin-bottom: 60px;
+  }
+
+  .bestsellers-item {
+    position: relative;
+  }
+
   .bestsellers-item__name {
     order: 1;
 
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 
-    width: 83.33%;
+    width: 83.8%;
 
     .block-font-style(53px, 57px);
   }
 
   .bestsellers-item__category {
-    margin-right: 10px;
-    margin-left: 35px;
-    margin-bottom: 55px;
+    margin-right: 0;
+    margin-left: 30px;
+    margin-bottom: 50px;
 
     width: 10%;
 
@@ -168,6 +188,10 @@
   }
 
   .bestsellers-item__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
     width: 525px;
     height: 636px;
 
@@ -175,10 +199,16 @@
   }
 
   .bestsellers-item__description {
-    margin-bottom: 52px;
+    margin-bottom: 45px;
   }
 
   .bestsellers-item__info {
-    margin-bottom: 77px;
+    margin-bottom: 73px;
+  }
+
+  .bestsellers-item__argument,
+  .bestsellers-item__value {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
