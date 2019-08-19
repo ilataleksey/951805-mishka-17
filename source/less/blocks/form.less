@@ -1,0 +1,100 @@
+.form__wrapper {
+  padding: 0 30px;
+}
+
+.form__text {
+  .block-font-style(13px, 24px);
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 30px 0 0 0;
+
+  border: none;
+}
+
+.form__legend {
+  display: block;
+
+  margin: 0;
+  margin-bottom: 22px;
+
+  width: 100%;
+
+  .block-font-style(17px, 16px);
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+
+  overflow: hidden;
+
+  &::after {
+    display: inline-block;
+    content: "";
+
+    margin-right: -100%;
+
+    width: 100%;
+    height: 1px;
+
+    vertical-align: middle;
+
+    border-left: 28px solid #ffffff;
+    background-color: #63d1bb;
+  }
+}
+
+.form__legend--tel,
+.form__legend--email {
+  margin-bottom: 8px;
+}
+
+.form__list {
+  .list-style-reset();
+
+  margin-top: -22px;
+}
+
+.form__list-item {
+  padding-left: 62px;
+  margin-bottom: 25px;
+
+  .block-font-style(17px, 18px);
+  font-weight: bold;
+  color: #000000;
+}
+
+.form__fieldset--name .form__list-item {
+  padding-left: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__list-item label {
+  display: block;
+}
+
+.form__fieldset input,
+.form__fieldset textarea {
+  padding: 14px 2px 14px 0;
+
+  width: 100%;
+
+  .block-font-style(17px, 18px);
+
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    color: rgba(129, 129, 129, 0.3);
+  }
+}
+
+.form__fieldset textarea {
+  padding: 14px;
+
+  border: 2px solid #000000;
+}
+
