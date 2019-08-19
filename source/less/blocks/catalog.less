@@ -38,7 +38,14 @@
 
   .catalog__list {
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    margin-right: 52px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
