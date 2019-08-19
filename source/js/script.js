@@ -17,10 +17,10 @@ navToggle.addEventListener('click', function(evt) {
 
 for (var i = 0; i < modalOpen.length; i++) {
   modalOpen[i].addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.add("modal--opened");
-  overlay.classList.add("overlay--shown");
-});
+    evt.preventDefault();
+    modal.classList.add("modal--opened");
+    overlay.classList.add("overlay--shown");
+  });
 }
 
 overlay.addEventListener("click", function (evt) {
