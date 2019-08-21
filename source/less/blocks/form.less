@@ -3,14 +3,14 @@
 }
 
 .form__text {
-  margin: 23px 0;
+  margin: 23px 0 24px 0;
 
   .block-font-style(13px, 24px);
 }
 
 .form__fieldset {
   margin: 0;
-  padding: 24px 0 0 0;
+  padding: 23px 0 0 0;
 
   border: none;
 
@@ -27,7 +27,7 @@
   &--textarea {
     position: relative;
 
-    padding-top: 31px;
+    padding-top: 32px;
   }
 }
 
@@ -45,9 +45,9 @@
   &::after {
     content: "";
 
+    align-self: center;
     flex-grow: 1;
 
-    margin-top: 9px;
     margin-left: 23px;
 
     min-width: 179px;
@@ -59,14 +59,14 @@
 
 .form__legend--tel,
 .form__legend--email {
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .form__list {
   .list-style-reset();
 
   &--radio {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   &--checkbox {
@@ -188,7 +188,7 @@
 
 .form__item--text {
   margin-bottom: 18px;
-  padding-top: 5px;
+  padding-top: 4px;
   padding-left: 0;
 
   .block-font-style(17px, 18px);
@@ -200,14 +200,10 @@
   }
 }
 
-.form__label--text {
-  padding-bottom: 3px;
-  padding-left: 0;
-}
 
 .form__input--text,
 .form__textarea {
-  padding: 16px 36px 15px 0;
+  padding: 12px 36px 15px 0;
 
   width: 100%;
 
@@ -231,8 +227,12 @@
   }
 }
 
+.form__input--text {
+  margin-top: 5px;
+}
+
 .form__input--text-tel {
-  padding: 11px 36px 13px 0;
+  padding: 10px 36px 13px 0;
 
   .block-font-style(19px, 18px);
 }
