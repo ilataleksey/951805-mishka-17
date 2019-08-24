@@ -10,25 +10,36 @@
 
 .form__fieldset {
   margin: 0;
-  padding: 23px 0 0 0;
+  padding: 0;
 
   border: none;
 
   &--color {
-    padding: 26px 0 0 0;
+    margin-bottom: 2px;
   }
 
   &--name {
-    padding-top: 25px;
+    margin-bottom: 31px;
   }
 
-  &--tel,
-  &--textarea {
-    padding-top: 31px;
+  &--tel {
+    margin-bottom: 32px;
   }
 
   &--email {
-    padding-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.form__legend {
+  margin-bottom: 23px;
+
+  &--color {
+    margin-bottom: 24px;
+  }
+
+  &--name {
+    margin-bottom: 25px;
   }
 }
 
@@ -281,7 +292,7 @@
 }
 
 .form__textarea {
-  margin-top: 26px;
+  margin-top: 1px;
   padding: 14px;
 
   min-height: 142px;
