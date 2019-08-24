@@ -70,6 +70,8 @@
 }
 
 .form__list {
+  flex-grow: 1;
+
   .list-style-reset();
 
   &--radio {
@@ -313,11 +315,13 @@
     .block-font-style(17px, 30px);
   }
 
-  .form__fieldset {
-    position: relative;
+  .form__fieldset-container {
+    display: flex;
+  }
 
+  .form__fieldset {
     margin: 0 -50px;
-    padding: 50px 50px 26px 217px;
+    padding: 50px 50px 26px 50px;
 
     border: none;
 
@@ -338,39 +342,37 @@
     }
 
     &--email {
-      padding-top: 21px;
+      padding-top: 22px;
       padding-bottom: 50px;
     }
 
     &--textarea {
       position: relative;
 
-      padding-bottom: 49px;
+      padding-bottom: 50px;
 
       .block-font-style(19px, 18px);
     }
   }
 
   .form__legend {
-    position: absolute;
-    top: 68px;
-    left: 50px;
+    flex-shrink: 0;
+
+    padding-top: 18px;
+
+    width: 167px;
 
     .block-font-style(17px, 16px);
     font-weight: bold;
     color: #63d1bb;
     text-transform: uppercase;
-
-    &--email {
-      top: 40px;
-    }
   }
 
   .form__label {
     &--radio,
     &--checkbox {
       padding-top: 16px;
-      padding-left: 82px;
+      padding-left: 80px;
 
       min-height: 55px;
 
@@ -445,34 +447,47 @@
 
   .form__label--text {
     padding-right: 25px;
-    padding-top: 15px;
+    padding-top: 16px;
   }
 
-  .form__input--text {
-    margin-top: 0;
-    padding-top: 11px;
-    padding-left: 16px;
-    padding-bottom: 14px;
+  .form__input {
+    &--text {
+      margin-top: 0;
+      padding-top: 11px;
+      padding-left: 16px;
+      padding-bottom: 14px;
 
-    .block-font-style(19px, 18px);
+      .block-font-style(19px, 18px);
+    }
+
+    &--text-tel,
+    &--text-email {
+      padding-right: 57px;
+    }
   }
 
   .form__input-container {
     position: relative;
 
+    flex-grow: 1;
+
     padding-top: 0;
   }
 
   .form__icon-phone {
-    right: 24px;
+    top: 12px;
+    right: 25px;
   }
 
   .form__icon-mail {
+    top: 12px;
     right: 22px;
   }
 
   .form__textarea {
     margin-top: 0;
+
+    .block-font-style(19px, 18px);
   }
 
   .form__bottom-container {
@@ -480,7 +495,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    margin-bottom: 47px;
+    margin-bottom: 49px;
   }
 
   .form__note {
