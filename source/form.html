@@ -134,12 +134,12 @@
                       <li class="form__item form__item--text">
                         <label class="form__label
                         form__label--text" for="name">Имя:</label>
-                        <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+                        <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
                       </li>
                       <li class="form__item form__item--text">
                         <label class="form__label
                         form__label--text" for="surname">Фамилия:</label>
-                        <input class="form__input form__input--text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+                        <input class="form__input form__input--text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
                       </li>
                       <li class="form__item form__item--text">
                         <label class="form__label
@@ -153,7 +153,7 @@
                   <div class="form__fieldset-container">
                     <label class="form__legend a form__legend--tel" for="tel">Тел</label>
                     <div class="form__input-container">
-                      <input class="form__input form__input--text form__input--text-tel" type="tel" name="telephone" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                      <input class="form__input form__input--text form__input--text-tel" type="tel" name="telephone" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}" required>
                       <svg class="form__icon-phone" width="25" height="25"><use xlink:href="#icon-phone"></use></svg>
                     </div>
                   </div>
@@ -162,7 +162,7 @@
                   <div class="form__fieldset-container">
                     <label class="form__legend form__legend--email" for="email">E-mail</label>
                     <div class="form__input-container">
-                      <input class="form__input form__input--text form__input--text-email" type="email" name="email" id="email" placeholder="Ваш Email*">
+                      <input class="form__input form__input--text form__input--text-email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
                       <svg class="form__icon-mail" width="32" height="32"><use xlink:href="#icon-mail"></use></svg>
                     </div>
                   </div>
